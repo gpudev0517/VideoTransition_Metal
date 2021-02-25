@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FGMusicView" customModule="Picflix" customModuleProvider="target">
+            <connections>
+                <outlet property="playButton" destination="njY-dO-JI9" id="Lxh-UL-TpV"/>
+                <outlet property="songTitleLabel" destination="lh1-qb-WMN" id="e0x-C8-T2t"/>
+                <outlet property="trimViewLeadingConstraint" destination="fby-VW-Sd2" id="1lN-pf-xim"/>
+                <outlet property="trimViewWidthConstraint" destination="ABW-Uf-P6J" id="kET-zl-DYt"/>
+                <outlet property="trimmingSuperView" destination="oPp-vW-Eo5" id="f0G-s4-rgs"/>
+                <outlet property="trimmingView" destination="ImM-Ar-FUH" id="oNx-3G-dag"/>
+                <outlet property="waveformView" destination="1Ki-Br-TVt" id="pZa-b3-ZN2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="196"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play-purple-icon" translatesAutoresizingMaskIntoConstraints="NO" id="mMB-OA-dJF">
+                    <rect key="frame" x="24" y="15" width="7" height="9"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="9" id="gSk-jx-opG"/>
+                        <constraint firstAttribute="width" constant="7" id="hHw-KV-Dg6"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fun" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lh1-qb-WMN">
+                    <rect key="frame" x="39" y="10" width="166" height="19.5"/>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                    <color key="textColor" red="0.54509803921568623" green="0.27450980392156865" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njY-dO-JI9">
+                    <rect key="frame" x="24" y="32" width="181" height="29"/>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                    <state key="normal" title="(Tap to Play)">
+                        <color key="titleColor" red="0.5450980392" green="0.27450980390000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="playTapped:" destination="-1" eventType="touchUpInside" id="4Jy-fv-Z6Q"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBo-XR-SmY">
+                    <rect key="frame" x="220" y="3.5" width="152" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="152" id="q7l-ud-MqL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                    <state key="normal" title="Select different music">
+                        <color key="titleColor" red="0.54509803921568623" green="0.27450980392156865" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectDifferentMusicTapped:" destination="-1" eventType="touchUpInside" id="GxF-uh-rTs"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drag the clip to set the starting point" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTL-7H-l5k">
+                    <rect key="frame" x="24" y="69.5" width="255" height="20"/>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                    <color key="textColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPp-vW-Eo5">
+                    <rect key="frame" x="0.0" y="97.5" width="414" height="76"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ki-Br-TVt" customClass="FDWaveformView" customModule="FDWaveformView">
+                            <rect key="frame" x="0.0" y="8" width="414" height="60"/>
+                            <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="xCD-o4-Ecm"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ImM-Ar-FUH" userLabel="TrimmingView">
+                            <rect key="frame" x="0.0" y="1" width="100" height="74"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNF-vi-SuJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="4" height="74"/>
+                                    <color key="backgroundColor" red="0.98039215686274506" green="0.84313725490196079" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="4" id="gds-lz-aDX"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OB6-Fa-jjm">
+                                    <rect key="frame" x="96" y="0.0" width="4" height="74"/>
+                                    <color key="backgroundColor" red="0.98039215690000003" green="0.84313725490000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="4" id="zHR-EO-Wwh"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="ABW-Uf-P6J"/>
+                                <constraint firstItem="oNF-vi-SuJ" firstAttribute="leading" secondItem="ImM-Ar-FUH" secondAttribute="leading" id="EnT-EZ-H79"/>
+                                <constraint firstAttribute="bottom" secondItem="oNF-vi-SuJ" secondAttribute="bottom" id="JhV-5I-EhP"/>
+                                <constraint firstAttribute="trailing" secondItem="OB6-Fa-jjm" secondAttribute="trailing" id="VXx-dU-igC"/>
+                                <constraint firstItem="oNF-vi-SuJ" firstAttribute="top" secondItem="ImM-Ar-FUH" secondAttribute="top" id="W3s-F6-MNd"/>
+                                <constraint firstItem="OB6-Fa-jjm" firstAttribute="top" secondItem="ImM-Ar-FUH" secondAttribute="top" id="gFf-2r-NdN"/>
+                                <constraint firstAttribute="bottom" secondItem="OB6-Fa-jjm" secondAttribute="bottom" id="hTv-qc-LTw"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="2cL-Hz-J0w" appends="YES" id="Xjn-Py-gyL"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ImM-Ar-FUH" firstAttribute="top" secondItem="oPp-vW-Eo5" secondAttribute="top" constant="1" id="1J7-4o-Alo"/>
+                        <constraint firstAttribute="height" constant="76" id="FzA-yi-0UP"/>
+                        <constraint firstItem="1Ki-Br-TVt" firstAttribute="leading" secondItem="oPp-vW-Eo5" secondAttribute="leading" id="a9V-Wx-fco"/>
+                        <constraint firstItem="ImM-Ar-FUH" firstAttribute="leading" secondItem="oPp-vW-Eo5" secondAttribute="leading" id="fby-VW-Sd2"/>
+                        <constraint firstAttribute="bottom" secondItem="ImM-Ar-FUH" secondAttribute="bottom" constant="1" id="sIg-6d-7hs"/>
+                        <constraint firstAttribute="trailing" secondItem="1Ki-Br-TVt" secondAttribute="trailing" id="wMr-3c-Tsf"/>
+                        <constraint firstItem="1Ki-Br-TVt" firstAttribute="centerY" secondItem="oPp-vW-Eo5" secondAttribute="centerY" id="xnO-QE-OpS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lh1-qb-WMN" firstAttribute="leading" secondItem="mMB-OA-dJF" secondAttribute="trailing" constant="8" id="5OV-ts-Bgh"/>
+                <constraint firstAttribute="trailing" secondItem="KBo-XR-SmY" secondAttribute="trailing" constant="42" id="BeI-yy-4Ed"/>
+                <constraint firstItem="mMB-OA-dJF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="DBf-ne-14M"/>
+                <constraint firstItem="mMB-OA-dJF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="DYi-Le-SDk"/>
+                <constraint firstItem="lh1-qb-WMN" firstAttribute="centerY" secondItem="mMB-OA-dJF" secondAttribute="centerY" id="GS2-eP-xsj"/>
+                <constraint firstAttribute="trailing" secondItem="oPp-vW-Eo5" secondAttribute="trailing" id="I71-Bt-7Uc"/>
+                <constraint firstItem="njY-dO-JI9" firstAttribute="leading" secondItem="mMB-OA-dJF" secondAttribute="leading" id="KYY-Et-KrQ"/>
+                <constraint firstItem="YTL-7H-l5k" firstAttribute="top" secondItem="lh1-qb-WMN" secondAttribute="bottom" constant="40" id="LIN-Bm-GvG"/>
+                <constraint firstItem="YTL-7H-l5k" firstAttribute="leading" secondItem="mMB-OA-dJF" secondAttribute="leading" id="Ndr-vn-RYg"/>
+                <constraint firstItem="njY-dO-JI9" firstAttribute="trailing" secondItem="lh1-qb-WMN" secondAttribute="trailing" id="aZb-IH-d8e"/>
+                <constraint firstItem="njY-dO-JI9" firstAttribute="top" secondItem="lh1-qb-WMN" secondAttribute="bottom" constant="2.5" id="jO0-vN-N6q"/>
+                <constraint firstItem="KBo-XR-SmY" firstAttribute="centerY" secondItem="lh1-qb-WMN" secondAttribute="centerY" id="k2t-sO-YVN"/>
+                <constraint firstItem="oPp-vW-Eo5" firstAttribute="top" secondItem="YTL-7H-l5k" secondAttribute="bottom" constant="8" id="kTM-Ht-drr"/>
+                <constraint firstItem="oPp-vW-Eo5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lAG-0D-lKD"/>
+                <constraint firstItem="KBo-XR-SmY" firstAttribute="leading" secondItem="lh1-qb-WMN" secondAttribute="trailing" constant="15" id="rbF-uO-STc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="137.68115942028987" y="-125.89285714285714"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="2cL-Hz-J0w">
+            <connections>
+                <action selector="trimViewDragged:" destination="-1" id="f6z-RB-UdI"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="play-purple-icon" width="7" height="9"/>
+    </resources>
+</document>

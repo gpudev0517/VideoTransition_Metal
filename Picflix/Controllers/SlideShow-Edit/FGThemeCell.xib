@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ThemeCell" id="7dy-fa-nVT" customClass="FGThemeCell" customModule="Flipagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="76" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rKV-o0-hRE">
+                <rect key="frame" x="0.0" y="0.0" width="76" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUF-NU-15S">
+                        <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rwh-iN-HtL">
+                                <rect key="frame" x="20.5" y="20.5" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="H8Z-xZ-XCs"/>
+                                    <constraint firstAttribute="width" constant="35" id="QQz-gC-Ch0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CD-v3-xT8">
+                                <rect key="frame" x="51" y="6" width="19" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.5450980392" green="0.27450980390000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="76" id="BBI-iq-viV"/>
+                            <constraint firstItem="Rwh-iN-HtL" firstAttribute="centerY" secondItem="YUF-NU-15S" secondAttribute="centerY" id="ImO-5g-N0j"/>
+                            <constraint firstAttribute="trailing" secondItem="9CD-v3-xT8" secondAttribute="trailing" constant="6" id="M1V-cX-pMf"/>
+                            <constraint firstItem="Rwh-iN-HtL" firstAttribute="centerX" secondItem="YUF-NU-15S" secondAttribute="centerX" id="cFE-wB-UBJ"/>
+                            <constraint firstItem="9CD-v3-xT8" firstAttribute="top" secondItem="YUF-NU-15S" secondAttribute="top" constant="6" id="wmQ-G8-N6r"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="None" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtR-8G-JcC">
+                        <rect key="frame" x="19" y="84" width="38.5" height="19"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                        <color key="textColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YUF-NU-15S" firstAttribute="leading" secondItem="rKV-o0-hRE" secondAttribute="leading" id="3nN-fg-vFw"/>
+                    <constraint firstItem="YUF-NU-15S" firstAttribute="top" secondItem="rKV-o0-hRE" secondAttribute="top" id="Bsy-qF-7tX"/>
+                    <constraint firstAttribute="trailing" secondItem="YUF-NU-15S" secondAttribute="trailing" id="Sw7-gT-5JV"/>
+                    <constraint firstItem="UtR-8G-JcC" firstAttribute="centerX" secondItem="rKV-o0-hRE" secondAttribute="centerX" id="UWA-o0-WAl"/>
+                    <constraint firstItem="UtR-8G-JcC" firstAttribute="top" secondItem="YUF-NU-15S" secondAttribute="bottom" constant="8" id="rxx-p0-tdO"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="114" height="111"/>
+            <connections>
+                <outlet property="imageBGView" destination="YUF-NU-15S" id="Y5C-DM-ai9"/>
+                <outlet property="imageView" destination="Rwh-iN-HtL" id="gv1-my-0iX"/>
+                <outlet property="proLabel" destination="9CD-v3-xT8" id="EXf-VM-6iR"/>
+                <outlet property="titleLabel" destination="UtR-8G-JcC" id="lrZ-3E-lpn"/>
+            </connections>
+            <point key="canvasLocation" x="136.23188405797103" y="102.12053571428571"/>
+        </collectionViewCell>
+    </objects>
+</document>

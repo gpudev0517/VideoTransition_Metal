@@ -1,0 +1,108 @@
+PODS:
+  - AppAuth (1.3.0):
+    - AppAuth/Core (= 1.3.0)
+    - AppAuth/ExternalUserAgent (= 1.3.0)
+  - AppAuth/Core (1.3.0)
+  - AppAuth/ExternalUserAgent (1.3.0)
+  - AppsFlyerFramework (5.3.0)
+  - Bolts/Tasks (1.9.1)
+  - FacebookCore (0.9.0):
+    - FBSDKCoreKit (~> 5.0)
+  - FacebookShare (0.9.0):
+    - FacebookCore (~> 0.9.0)
+    - FBSDKCoreKit (~> 5.0)
+    - FBSDKShareKit (~> 5.0)
+  - FBSDKCoreKit (5.15.1):
+    - FBSDKCoreKit/Basics (= 5.15.1)
+    - FBSDKCoreKit/Core (= 5.15.1)
+  - FBSDKCoreKit/Basics (5.15.1)
+  - FBSDKCoreKit/Core (5.15.1):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (5.15.1):
+    - FBSDKLoginKit/Login (= 5.15.1)
+  - FBSDKLoginKit/Login (5.15.1):
+    - FBSDKCoreKit (~> 5.0)
+  - FBSDKShareKit (5.15.1):
+    - FBSDKShareKit/Share (= 5.15.1)
+  - FBSDKShareKit/Share (5.15.1):
+    - FBSDKCoreKit (~> 5.0)
+  - FDWaveformView (4.0.0)
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GTMAppAuth (1.0.0):
+    - AppAuth/Core (~> 1.0)
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.4.0):
+    - GTMSessionFetcher/Full (= 1.4.0)
+  - GTMSessionFetcher/Core (1.4.0)
+  - GTMSessionFetcher/Full (1.4.0):
+    - GTMSessionFetcher/Core (= 1.4.0)
+  - JVFloatLabeledTextField (1.2.2)
+  - Parse (1.18.0):
+    - Parse/Core (= 1.18.0)
+  - Parse/Core (1.18.0):
+    - Bolts/Tasks (= 1.9.1)
+  - PryntTrimmerView (4.0.0)
+  - Purchases (3.3.1)
+  - RappleProgressHUD (4.1)
+  - SnapSDK/SCSDKCreativeKit (1.4.4)
+
+DEPENDENCIES:
+  - AppsFlyerFramework
+  - FacebookShare
+  - FBSDKLoginKit
+  - FDWaveformView (~> 4.0)
+  - GoogleSignIn
+  - JVFloatLabeledTextField
+  - Parse
+  - PryntTrimmerView
+  - Purchases
+  - RappleProgressHUD
+  - SnapSDK/SCSDKCreativeKit
+
+SPEC REPOS:
+  trunk:
+    - AppAuth
+    - AppsFlyerFramework
+    - Bolts
+    - FacebookCore
+    - FacebookShare
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
+    - FDWaveformView
+    - GoogleSignIn
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - JVFloatLabeledTextField
+    - Parse
+    - PryntTrimmerView
+    - Purchases
+    - RappleProgressHUD
+    - SnapSDK
+
+SPEC CHECKSUMS:
+  AppAuth: 73574f3013a1e65b9601a3ddc8b3158cce68c09d
+  AppsFlyerFramework: 122cc8b2de52f2b82ea739c2d9e57f919a9f5653
+  Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
+  FacebookCore: ba86524b66cfa86d0f8e65d08faa8504a9f732dd
+  FacebookShare: 85968ad1b1606c4944fb154924e425fd29184ea5
+  FBSDKCoreKit: 1d5acf7c9d7a2f92bb1a242dc60cae5b7adb91df
+  FBSDKLoginKit: f1ea8026a58b52d30c9f2e6a58ca7d813619fb83
+  FBSDKShareKit: 259737eab3cc807087374553abdf588b3096ba55
+  FDWaveformView: b499c71c154992cee41b543ff00916a8882e696b
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
+  GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
+  GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  JVFloatLabeledTextField: df48598472ee015701d509f43e59492a0d4ca208
+  Parse: 79bdda34fdb7eb2a707a43a951c8aae236cb3e34
+  PryntTrimmerView: 67e67573ffd4c073f1308effa66aefd0cfa667a0
+  Purchases: 15bb10a16e825ea724aeab107d98036fa168a670
+  RappleProgressHUD: f29bc5dc5f9834c2caa9c2ae21ba11f3ff2b5a85
+  SnapSDK: 9ea8d26ca876b7f1d85fad2f2ec09852f3b156d0
+
+PODFILE CHECKSUM: 4920bf8e0601804042f243bf7b1a139e7ef0696e
+
+COCOAPODS: 1.9.1
